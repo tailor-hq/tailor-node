@@ -1,0 +1,62 @@
+{
+  "name": "@tailor-ai/node",
+  "version": "0.1.0",
+  "description": "Run Tailor tests in your own server code. Picks a test's variant in memory, with no network call per request, and records conversions alongside the Tailor tag on your page.",
+  "keywords": [
+    "ab-testing",
+    "experimentation",
+    "server-side",
+    "feature-test",
+    "personalization",
+    "tailor"
+  ],
+  "license": "MIT",
+  "author": "Tailor AI <hello@tailorhq.ai> (https://tailorhq.ai)",
+  "homepage": "https://github.com/tailor-hq/tailor-node#readme",
+  "bugs": {
+    "url": "https://github.com/tailor-hq/tailor-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailor-hq/tailor-node.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "build": "rm -rf dist && tsc -p tsconfig.json && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node scripts/finish-cjs.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.test.json",
+    "lint": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.test.json",
+    "test": "jest --watchman=false --verbose --config jest.config.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.7.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
+}

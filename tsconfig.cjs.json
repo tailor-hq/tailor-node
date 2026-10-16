@@ -1,0 +1,16 @@
+{
+  // The CommonJS build, so an Express app still on `require` can load the SDK.
+  // scripts/finish-cjs.mjs renames its files to .cjs, because this package's
+  // "type": "module" would otherwise make Node read them as ESM.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node10",
+    "ignoreDeprecations": "5.0",
+    "verbatimModuleSyntax": false,
+    "emitDeclarationOnly": false,
+    "declaration": false,
+    "removeComments": true,
+    "outDir": "./dist/cjs"
+  }
+}

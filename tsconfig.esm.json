@@ -1,0 +1,12 @@
+{
+  // The ESM build. Comments are stripped from the JavaScript only; the
+  // declarations keep their docblocks, which is where an SDK's documentation
+  // reaches the customer's editor.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "emitDeclarationOnly": false,
+    "declaration": false,
+    "removeComments": true,
+    "outDir": "./dist/esm"
+  }
+}

@@ -1,0 +1,1189 @@
+{
+  "description": "Generated from packages/shared/src/util/treatment-assignment.ts and collections.ts. Regenerate only if those functions change on purpose, which would move every visitor between variants.",
+  "simpleHash": [
+    {
+      "input": "visitor-1",
+      "output": "v3mlqq"
+    },
+    {
+      "input": "visitor-2",
+      "output": "v3mlqr"
+    },
+    {
+      "input": "alice@example.com",
+      "output": "zhjcxp"
+    },
+    {
+      "input": "12345",
+      "output": "ruxir"
+    },
+    {
+      "input": "98765",
+      "output": "wd77b"
+    },
+    {
+      "input": "anon_8f3a2c",
+      "output": "noio3k"
+    },
+    {
+      "input": "ÜmlautUser",
+      "output": "iog4z4"
+    },
+    {
+      "input": "user with spaces",
+      "output": "4a60we"
+    },
+    {
+      "input": "a",
+      "output": "2p"
+    },
+    {
+      "input": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "output": "xw011u"
+    }
+  ],
+  "fasterHash": [
+    {
+      "input": "visitor-1",
+      "output": 0.34615613877450957
+    },
+    {
+      "input": "visitor-2",
+      "output": 0.35006248260616846
+    },
+    {
+      "input": "alice@example.com",
+      "output": 0.5806382462802898
+    },
+    {
+      "input": "12345",
+      "output": 0.26469044952296894
+    },
+    {
+      "input": "98765",
+      "output": 0.2292015497175049
+    },
+    {
+      "input": "anon_8f3a2c",
+      "output": 0.05969121052410715
+    },
+    {
+      "input": "ÜmlautUser",
+      "output": 0.9298702655196819
+    },
+    {
+      "input": "user with spaces",
+      "output": 0.5882615581127493
+    },
+    {
+      "input": "a",
+      "output": 0.8908105597111421
+    },
+    {
+      "input": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "output": 0.13337080207033333
+    }
+  ],
+  "assignments": [
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqq",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqq",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqq",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqr",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqr",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "6a3YQA--checkout-v2-v3mlqr",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "6a3YQA--checkout-v2-zhjcxp",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "6a3YQA--checkout-v2-zhjcxp",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "6a3YQA--checkout-v2-zhjcxp",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "6a3YQA--checkout-v2-ruxir",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "6a3YQA--checkout-v2-ruxir",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "6a3YQA--checkout-v2-ruxir",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "6a3YQA--checkout-v2-wd77b",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "6a3YQA--checkout-v2-wd77b",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "6a3YQA--checkout-v2-wd77b",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "6a3YQA--checkout-v2-noio3k",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "6a3YQA--checkout-v2-noio3k",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "6a3YQA--checkout-v2-noio3k",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "6a3YQA--checkout-v2-iog4z4",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "6a3YQA--checkout-v2-iog4z4",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "6a3YQA--checkout-v2-iog4z4",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "6a3YQA--checkout-v2-4a60we",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "6a3YQA--checkout-v2-4a60we",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "6a3YQA--checkout-v2-4a60we",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "6a3YQA--checkout-v2-2p",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "6a3YQA--checkout-v2-2p",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "6a3YQA--checkout-v2-2p",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "6a3YQA--checkout-v2-xw011u",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "6a3YQA--checkout-v2-xw011u",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "6a3YQA--checkout-v2",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "6a3YQA--checkout-v2-xw011u",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "abcDEF--pricing-headline-v3mlqq",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "abcDEF--pricing-headline-v3mlqq",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-1",
+      "trackingId": "v3mlqq",
+      "hashInput": "abcDEF--pricing-headline-v3mlqq",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "abcDEF--pricing-headline-v3mlqr",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "abcDEF--pricing-headline-v3mlqr",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "visitor-2",
+      "trackingId": "v3mlqr",
+      "hashInput": "abcDEF--pricing-headline-v3mlqr",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "abcDEF--pricing-headline-zhjcxp",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "abcDEF--pricing-headline-zhjcxp",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "alice@example.com",
+      "trackingId": "zhjcxp",
+      "hashInput": "abcDEF--pricing-headline-zhjcxp",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "abcDEF--pricing-headline-ruxir",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "abcDEF--pricing-headline-ruxir",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "12345",
+      "trackingId": "ruxir",
+      "hashInput": "abcDEF--pricing-headline-ruxir",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "abcDEF--pricing-headline-wd77b",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "abcDEF--pricing-headline-wd77b",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "98765",
+      "trackingId": "wd77b",
+      "hashInput": "abcDEF--pricing-headline-wd77b",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "abcDEF--pricing-headline-noio3k",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "abcDEF--pricing-headline-noio3k",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "anon_8f3a2c",
+      "trackingId": "noio3k",
+      "hashInput": "abcDEF--pricing-headline-noio3k",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "abcDEF--pricing-headline-iog4z4",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "abcDEF--pricing-headline-iog4z4",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "ÜmlautUser",
+      "trackingId": "iog4z4",
+      "hashInput": "abcDEF--pricing-headline-iog4z4",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "abcDEF--pricing-headline-4a60we",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "abcDEF--pricing-headline-4a60we",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "control"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "user with spaces",
+      "trackingId": "4a60we",
+      "hashInput": "abcDEF--pricing-headline-4a60we",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "abcDEF--pricing-headline-2p",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "abcDEF--pricing-headline-2p",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-2"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "a",
+      "trackingId": "2p",
+      "hashInput": "abcDEF--pricing-headline-2p",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "abcDEF--pricing-headline-xw011u",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.5
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.5
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "abcDEF--pricing-headline-xw011u",
+      "variants": [
+        {
+          "name": "control",
+          "fraction": 0.34
+        },
+        {
+          "name": "variant-1",
+          "fraction": 0.33
+        },
+        {
+          "name": "variant-2",
+          "fraction": 0.33
+        }
+      ],
+      "expected": "variant-1"
+    },
+    {
+      "testKey": "abcDEF--pricing-headline",
+      "visitorId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "trackingId": "xw011u",
+      "hashInput": "abcDEF--pricing-headline-xw011u",
+      "variants": [
+        {
+          "name": "variant-1",
+          "fraction": 0.9
+        },
+        {
+          "name": "control",
+          "fraction": 0.1
+        }
+      ],
+      "expected": "variant-1"
+    }
+  ]
+}
