@@ -1,6 +1,6 @@
 {
   "name": "@tailor-ai/node",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run Tailor tests in your own server code. Picks a test's variant in memory, with no network call per request, and records conversions alongside the Tailor tag on your page.",
   "keywords": [
     "ab-testing",

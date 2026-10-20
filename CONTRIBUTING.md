@@ -20,11 +20,13 @@ somebody's server. Every error path (the CDN down, a malformed config, a bug in
 here) returns the default the caller passed. Nothing throws to a caller after
 `init`, and nothing awaits the network inside `getTest` or `convert`.
 
-**2. Variant assignment must agree with the Tailor tag.** A visitor bucketed
-here and on the page has to land in the same variant, or results are wrong.
-`src/internal/assignment.vectors.json` pins the expected assignments, and the
-same file is checked against the browser's implementation. A change that moves
-any visitor between variants is a breaking change, not a fix.
+**2. The visitor id must agree with the Tailor tag, and assignment must not
+move.** `simpleHash(id)` is the id both this package and the tag record, so a
+server decision and the visitor's page events join; `src/internal/assignment.vectors.json`
+pins it and is checked against the browser's implementation.
+`src/internal/assignment.sdk-vectors.json` pins which variant each visitor
+gets. A change that moves any visitor between variants is a breaking change,
+not a fix.
 
 **3. The public API is permanent once published.** `src/package-shape.test.ts`
 pins the exports and the `import`/`require` entries. Adding is a minor version;
